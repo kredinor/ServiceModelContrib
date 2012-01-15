@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceModelContrib", "ServiceModelContrib\ServiceModelContrib.csproj", "{11CF55A8-277D-4129-91B8-075BCC794E5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceModelContrib.Tests", "ServiceModelContrib.Tests\ServiceModelContrib.Tests.csproj", "{3E7DFC17-7A06-4F27-97B7-F6582F74AFA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceModelContrib.IoC.Unity", "ServiceModelContrib.IoC.Unity\ServiceModelContrib.IoC.Unity.csproj", "{459FAC9B-0AAB-433D-B7B9-196A9FDE2856}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceModelContrib.IoC.Unity.Tests", "ServiceModelContrib.IoC.Unity.Tests\ServiceModelContrib.IoC.Unity.Tests.csproj", "{925C31F8-6DFA-4875-BBCD-AFDF9869D11D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{8D5ED309-8589-41D0-AC76-6DDE7F37E3AC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{23C555B9-B962-4185-91CB-174913D95957}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE.txt = LICENSE.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{848512ED-85BC-4C2B-B3C4-4BBBBF26BD21}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{11CF55A8-277D-4129-91B8-075BCC794E5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11CF55A8-277D-4129-91B8-075BCC794E5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11CF55A8-277D-4129-91B8-075BCC794E5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11CF55A8-277D-4129-91B8-075BCC794E5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E7DFC17-7A06-4F27-97B7-F6582F74AFA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E7DFC17-7A06-4F27-97B7-F6582F74AFA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E7DFC17-7A06-4F27-97B7-F6582F74AFA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E7DFC17-7A06-4F27-97B7-F6582F74AFA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{459FAC9B-0AAB-433D-B7B9-196A9FDE2856}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{459FAC9B-0AAB-433D-B7B9-196A9FDE2856}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{459FAC9B-0AAB-433D-B7B9-196A9FDE2856}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{459FAC9B-0AAB-433D-B7B9-196A9FDE2856}.Release|Any CPU.Build.0 = Release|Any CPU
+		{925C31F8-6DFA-4875-BBCD-AFDF9869D11D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{925C31F8-6DFA-4875-BBCD-AFDF9869D11D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{925C31F8-6DFA-4875-BBCD-AFDF9869D11D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{925C31F8-6DFA-4875-BBCD-AFDF9869D11D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{925C31F8-6DFA-4875-BBCD-AFDF9869D11D} = {8D5ED309-8589-41D0-AC76-6DDE7F37E3AC}
+		{3E7DFC17-7A06-4F27-97B7-F6582F74AFA8} = {8D5ED309-8589-41D0-AC76-6DDE7F37E3AC}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.0\lib\NET35
+	EndGlobalSection
+EndGlobal
