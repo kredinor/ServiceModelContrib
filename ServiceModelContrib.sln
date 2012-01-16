@@ -12,9 +12,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{8D5ED309-8589-41D0-AC76-6DDE7F37E3AC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{23C555B9-B962-4185-91CB-174913D95957}"
-	ProjectSection(SolutionItems) = preProject
-		LICENSE.txt = LICENSE.txt
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{848512ED-85BC-4C2B-B3C4-4BBBBF26BD21}"
 	ProjectSection(SolutionItems) = preProject

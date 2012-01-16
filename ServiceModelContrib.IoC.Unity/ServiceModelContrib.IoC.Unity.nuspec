@@ -1,17 +1,33 @@
 <?xml version="1.0"?>
-<package >
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>ServiceModelContrib.IoC.Unity</id>
-    <version>1.0.0</version>
     <title>ServiceModelContrib.IoC.Unity</title>
+    <version>1.0.0</version>
     <authors>Kredinor</authors>
     <owners>Kredinor</owners>
-    <licenseUrl>http://LICENSE_URL_HERE_OR_DELETE_THIS_LINE</licenseUrl>
-    <projectUrl>http://github.com/kredinor/ServiceModelContrib/</projectUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>$description$</description>
-    <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
-    <copyright>Copyright 2012 Kredinor all rights reserved</copyright>
-    <tags>Tag1 Tag2</tags>
+    <licenseUrl>https://github.com/kredinor/ServiceModelContrib/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/kredinor/ServiceModelContrib/</projectUrl>
+    <dependencies>
+      <dependency id="ServiceModelContrib" version="1.0.0" />
+       <dependency id="CommonServiceLocator" version="1.0" />
+       <dependency id="Unity" version="2.1.505.0" />
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.ServiceModel" targetFramework="net40" />
+      <frameworkAssembly assemblyName="System.ServiceModel.Activation" targetFramework="net40" />
+      <frameworkAssembly assemblyName="System.Web" targetFramework="net40" />
+      <frameworkAssembly assemblyName="System.Configuration" targetFramework="net40" />
+    </frameworkAssemblies>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>Microsoft Unity integration for WCF (client-/service-side).</description>
+    <summary />
+    <releaseNotes />
+    <copyright>2012 Kredinor, Norway</copyright>
+    <language>en-US</language>
+    <tags>wcf servicemodel</tags>
   </metadata>
+  <files>
+    <file src="..\Build\Release\ServiceModelContrib.IoC.Unity.dll" target="lib\net40" />
+  </files>
 </package>

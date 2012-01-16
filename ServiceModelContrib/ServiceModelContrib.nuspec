@@ -1,18 +1,25 @@
 <?xml version="1.0"?>
-<package >
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
-    <id>$id$</id>
-    <version>$version$</version>
-    <title>$title$</title>
-    <authors>$author$</authors>
-    <owners>$author$</owners>
-    <licenseUrl>http://LICENSE_URL_HERE_OR_DELETE_THIS_LINE</licenseUrl>
-    <projectUrl>http://PROJECT_URL_HERE_OR_DELETE_THIS_LINE</projectUrl>
-    <iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>$description$</description>
-    <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
-    <copyright>Copyright 2012</copyright>
-    <tags>Tag1 Tag2</tags>
+    <version>1.0.0</version>
+    <authors>Kredinor</authors>
+    <owners>Kredinor</owners>
+    <licenseUrl>https://github.com/kredinor/ServiceModelContrib/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/kredinor/ServiceModelContrib/</projectUrl>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.ServiceModel" targetFramework="net40" />
+    </frameworkAssemblies>
+    <id>ServiceModelContrib</id>
+    <title>ServiceModelContrib</title>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>Helpers for developing more robust WCF-based services.</description>
+    <summary />
+    <releaseNotes />
+    <copyright>2012 Kredinor, Norway</copyright>
+    <language>en-US</language>
+    <tags>wcf servicemodel</tags>
   </metadata>
+  <files>
+    <file src="..\Build\Release\ServiceModelContrib.dll" target="lib\net40" />
+  </files>
 </package>
