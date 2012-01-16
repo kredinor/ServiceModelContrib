@@ -25,7 +25,7 @@
     <releaseNotes />
     <copyright>2012 Kredinor, Norway</copyright>
     <language>en-US</language>
-    <tags>wcf servicemodel</tags>
+    <tags>wcf servicemodel unity</tags>
   </metadata>
   <files>
     <file src="..\Build\Release\ServiceModelContrib.IoC.Unity.dll" target="lib\net40" />
