@@ -1,0 +1,10 @@
+   ServiceModelContrib
+   Copyright 2012 Kredinor, Norway
+   
+   Contains code found in the Unity discussion forums
+   http://unity.codeplex.com/ (re. hierarchical lifetime containers).
+   
+   Contains ideas for handling WCF faults w/Silverlight clients
+   described here http://msdn.microsoft.com/en-us/library/ee844556(v=vs.95).aspx and
+   other places.
+   
