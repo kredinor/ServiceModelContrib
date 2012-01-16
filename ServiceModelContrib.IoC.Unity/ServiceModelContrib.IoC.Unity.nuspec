@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>ServiceModelContrib.IoC.Unity</id>
+    <version>1.0.0</version>
+    <title>ServiceModelContrib.IoC.Unity</title>
+    <authors>Kredinor</authors>
+    <owners>Kredinor</owners>
+    <licenseUrl>http://LICENSE_URL_HERE_OR_DELETE_THIS_LINE</licenseUrl>
+    <projectUrl>http://github.com/kredinor/ServiceModelContrib/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
+    <copyright>Copyright 2012 Kredinor all rights reserved</copyright>
+    <tags>Tag1 Tag2</tags>
+  </metadata>
+</package>
