@@ -1,33 +1,29 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
-    <id>ServiceModelContrib.IoC.Unity</id>
-    <title>ServiceModelContrib.IoC.Unity</title>
     <version>1.0.1</version>
     <authors>Kredinor</authors>
     <owners>Kredinor</owners>
     <licenseUrl>https://github.com/kredinor/ServiceModelContrib/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/kredinor/ServiceModelContrib/</projectUrl>
     <dependencies>
-       <dependency id="ServiceModelContrib" version="1.0.1" />
-       <dependency id="CommonServiceLocator" version="1.0" />
-       <dependency id="Unity" version="2.1.505.0" />
+      <dependency id="ServiceModelContrib" version="1.0.1" />
     </dependencies>
     <frameworkAssemblies>
       <frameworkAssembly assemblyName="System.ServiceModel" targetFramework="net40" />
-      <frameworkAssembly assemblyName="System.ServiceModel.Activation" targetFramework="net40" />
-      <frameworkAssembly assemblyName="System.Web" targetFramework="net40" />
-      <frameworkAssembly assemblyName="System.Configuration" targetFramework="net40" />
+      <frameworkAssembly assemblyName="System.ServiceModel.Web" targetFramework="net40" />
     </frameworkAssemblies>
+    <id>ServiceModelContrib.Testing</id>
+    <title>ServiceModelContrib.Testing</title>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <description>Microsoft Unity integration for WCF (client-/service-side).</description>
+    <description>Helpers for testing WCF-based services.</description>
     <summary />
     <releaseNotes />
     <copyright>2012 Kredinor, Norway</copyright>
     <language>en-US</language>
-    <tags>wcf servicemodel unity</tags>
+    <tags>wcf servicemodel testing</tags>
   </metadata>
   <files>
-    <file src="..\Build\Release\ServiceModelContrib.IoC.Unity.dll" target="lib\net40" />
+    <file src="..\Build\Release\ServiceModelContrib.Testing.dll" target="lib\net40" />
   </files>
 </package>

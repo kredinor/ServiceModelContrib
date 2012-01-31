@@ -69,6 +69,12 @@
     <Compile Include="SilverlightFaultBehavior.cs" />
     <Compile Include="SilverlightFaultMessageInspector.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Web\HttpOperationContext.cs" />
+    <Compile Include="Web\HttpRequestContext.cs" />
+    <Compile Include="Web\HttpResponseContext.cs" />
+    <Compile Include="Web\IHttpOperationContext.cs" />
+    <Compile Include="Web\IHttpRequestContext.cs" />
+    <Compile Include="Web\IHttpResponseContext.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ServiceModelContrib.nuspec" />
@@ -82,7 +88,8 @@
   </Target>
   -->
   <PropertyGroup>
-    <PostBuildEvent></PostBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
   </PropertyGroup>
   <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
 </Project>
