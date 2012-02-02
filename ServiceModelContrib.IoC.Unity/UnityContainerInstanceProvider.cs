@@ -67,6 +67,12 @@
             try
             {
                 IUnityContainer requestContainer = _parentContainer.CreateChildContainer();
+
+                foreach (var registry in UnityApplicationContainer.UnityRegistries)
+                {
+                    registry.ConfigureChildContainer(requestContainer);
+                }
+
                 object serviceInstance = requestContainer.Resolve(_serviceType);
 
                 lock (_requestContainers)
