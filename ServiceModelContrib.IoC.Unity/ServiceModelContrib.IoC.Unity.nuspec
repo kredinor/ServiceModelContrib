@@ -3,7 +3,7 @@
   <metadata>
     <id>ServiceModelContrib.IoC.Unity</id>
     <title>ServiceModelContrib.IoC.Unity</title>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <authors>Kredinor</authors>
     <owners>Kredinor</owners>
     <licenseUrl>https://github.com/kredinor/ServiceModelContrib/blob/master/LICENSE</licenseUrl>
