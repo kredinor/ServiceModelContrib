@@ -51,6 +51,20 @@ namespace ServiceModelContrib.IoC.Unity.Tests
         }
 
         [Fact]
+        public void Should_invoke_action_on_ChannelFactory_upon_configuration()
+        {
+            using (var container = new UnityContainer())
+            {
+                bool checker = false;
+                container.RegisterEndpointsFromConfiguration(cf =>
+                                                                 {
+                                                                     checker = true;
+                                                                 });
+                Assert.Equal(true, checker);
+            }
+        }
+
+        [Fact]
         public void Should_be_able_to_resolve_a_named_client()
         {
             using (var container = new UnityContainer())

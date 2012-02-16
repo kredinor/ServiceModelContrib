@@ -209,12 +209,18 @@ namespace ServiceModelContrib.IoC.Unity
             return container.RegisterInstance(name, endpointAddress, new ContainerControlledLifetimeManager());
         }
 
+        public static IUnityContainer RegisterEndpointsFromConfiguration(this IUnityContainer container)
+        {
+            return RegisterEndpointsFromConfiguration(container, null);
+        }
+
         /// <summary>           
         /// Registers channel factories for all endpoints in the system.serviceModel/clients section in the configuration file.
         /// </summary>
         /// <param name="container">Unity container to extend.</param>
+        /// <param name="channelFactoryAction"></param>
         /// <returns>The Unity container - to enable chaining of calls.</returns>
-        public static IUnityContainer RegisterEndpointsFromConfiguration(this IUnityContainer container)
+        public static IUnityContainer RegisterEndpointsFromConfiguration(this IUnityContainer container, Action<ChannelFactory> channelFactoryAction)
         {
             var clientSection = ConfigurationManager.GetSection(SystemServiceModelClientSectionName) as ClientSection;
             if (clientSection != null)
@@ -243,7 +249,13 @@ namespace ServiceModelContrib.IoC.Unity
                         throw new InvalidOperationException(
                             "The type did not contain a constructor with one string-based parameter.");
                     }
+
                     object channelFactory = constructorInfo.Invoke(new object[] {endpointElement.Name});
+
+                    if (channelFactoryAction != null)
+                    {
+                        channelFactoryAction(((ChannelFactory) channelFactory));
+                    }
 
                     int noOfClientsWithSameContract = GetNoOfClientsWithSameContract(clientSection, endpointElement);
 
