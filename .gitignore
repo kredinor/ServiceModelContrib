@@ -28,3 +28,6 @@ _ReSharper*/
 
 # Nuget
 packages/
+
+*.ncrunchproject
+*.ncrunchsolution
